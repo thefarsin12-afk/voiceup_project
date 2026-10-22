@@ -123,7 +123,8 @@ class FeedBackSummariView(APIView):
 
       response_data = {
 
-          "sentiment_summary":0
+          "sentiment_summary":0,
+          "category_summary":0,
       }
 
       summari_wise = FeedbackModel.objects.filter(student=request.user)
