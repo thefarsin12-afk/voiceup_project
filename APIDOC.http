@@ -1,0 +1,76 @@
+# ==== USER SECTION ====
+
+# user sign in
+###
+POST http://127.0.0.1:8000/api/signup/
+Content-Type: application/json
+
+{
+    "username":"student2",
+    "email":"st2@gmail.com",
+    "password":"password@123"
+}
+
+# user login
+###
+POST http://127.0.0.1:8000/api/signin/
+Content-Type: application/json
+
+{
+    "username":"student1",
+    "password":"password@123"
+}
+
+# get me api
+###
+GET http://127.0.0.1:8000/api/me/
+Accept: application/json
+Authorization: Token 7750e61c65be2d10be682ce628119dc1f87eca0f
+
+# api for listing all feedback
+###
+GET http://127.0.0.1:8000/api/feedback/
+Accept: application/json
+Authorization: Basic student1:password@123
+
+# api creting record
+###
+POST http://127.0.0.1:8000/api/feedback/
+Content-Type: application/json
+Authorization: Basic student1:password@123
+
+{
+    "department": "ece",
+    "feedback_text": "The classrooms are poorly maintained."
+}
+
+# api for retrieve
+###
+GET http://127.0.0.1:8000/api/feedback/2/
+Accept: application/json
+Authorization: Token 7750e61c65be2d10be682ce628119dc1f87eca0f
+
+# api for updating feedback
+###
+PUT http://127.0.0.1:8000/api/feedback/1/
+Content-Type: application/json
+Authorization: Token 7750e61c65be2d10be682ce628119dc1f87eca0f
+
+{
+  "department": "ece",
+  "feedback_text": "The classrooms are poorly maintained...wow."
+}
+
+
+#api for delete
+###
+DELETE http://127.0.0.1:8000/api/feedback/1/
+Accept: application/json
+Authorization: Token 7750e61c65be2d10be682ce628119dc1f87eca0f
+
+
+# api for for feed back summary
+###
+GET http://127.0.0.1:8000/api/feedback/summary/
+Accept: application/json
+Authorization: Token 7750e61c65be2d10be682ce628119dc1f87eca0f
