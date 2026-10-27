@@ -41,7 +41,7 @@ Authorization: Basic student1:password@123
 
 {
     "department": "ece",
-    "feedback_text": "The classrooms are poorly maintained."
+    "feedback_text": "this webinar section is good."
 }
 
 # api for retrieve
