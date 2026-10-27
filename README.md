@@ -44,9 +44,6 @@ The project demonstrates REST API development, authentication, authorization, CR
 
 ```text
 voiceup_project/
-├── voiceup_project/
-│   ├── settings.py
-│   └── urls.py
 ├── feedback/
 │   ├── models.py
 │   ├── views.py
@@ -54,13 +51,20 @@ voiceup_project/
 │   ├── permission.py
 │   ├── ai_integration.py
 │   └── urls.py
+├── voiceup_project/
+│   ├── settings.py
+│   ├── urls.py
+│   └── ...
 ├── .env
 ├── .gitignore
 ├── APIDOC.http
+├── db.sqlite3
 ├── manage.py
-└── requirements.txt
+├── requirements.txt
+└── voiceup.md
 ```
 
+*Note: The internal files shown under `feedback/` and `voiceup_project/` are based on the code shared. Verify their exact names and contents in your repository.*
 *This is an illustrative structure based on the code shared. Confirm the actual directory and filenames against your repository.*
 
 ## ⚙️ Installation and Setup
