@@ -45,16 +45,25 @@ The project demonstrates REST API development, authentication, authorization, CR
 ```text
 voiceup_project/
 ├── feedback/
-│   ├── models.py
-│   ├── views.py
-│   ├── serializer.py
-│   ├── permission.py
+│   ├── __pycache__/
+│   ├── migrations/
+│   ├── __init__.py
+│   ├── admin.py
 │   ├── ai_integration.py
-│   └── urls.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── permission.py
+│   ├── serializer.py
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
 ├── voiceup_project/
+│   ├── __pycache__/
+│   ├── __init__.py
+│   ├── asgi.py
 │   ├── settings.py
 │   ├── urls.py
-│   └── ...
+│   └── wsgi.py
 ├── .env
 ├── .gitignore
 ├── APIDOC.http
@@ -63,6 +72,7 @@ voiceup_project/
 ├── requirements.txt
 └── voiceup.md
 ```
+
 
 *Note: The internal files shown under `feedback/` and `voiceup_project/` are based on the code shared. Verify their exact names and contents in your repository.*
 *This is an illustrative structure based on the code shared. Confirm the actual directory and filenames against your repository.*
